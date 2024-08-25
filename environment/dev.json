@@ -1,0 +1,7 @@
+{
+  "MONGO_HOST": "localhost:27017",
+  "MONGO_USERNAME": "",
+  "MONGO_PASSWORD": "",
+  "MONGO_DB_NAME": "fullstackwhiz",
+  "SERVER_BASE_URl": "http://localhost:8000/"
+}
