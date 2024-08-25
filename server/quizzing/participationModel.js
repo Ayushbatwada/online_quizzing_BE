@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 const UserSchema = require('./userModel');
 
-const mcqUserResponsesSchema = new mongoose.Schema({
+const quizUserResponsesSchema = new mongoose.Schema({
     _id: false,
     questionId: {
         type: mongoose.Schema.Types.ObjectId,
@@ -27,14 +27,14 @@ const mcqUserResponsesSchema = new mongoose.Schema({
     }
 })
 
-const mcqParticipationSchema = new mongoose.Schema({
+const quizParticipationSchema = new mongoose.Schema({
     mcqId: {
         type: mongoose.Schema.Types.ObjectId,
         index: true,
         required: true
     },
     userResponses: {
-        type: [mcqUserResponsesSchema],
+        type: [quizUserResponsesSchema],
         required: true
     },
     userQuestionAttemptedCount: {
@@ -49,10 +49,6 @@ const mcqParticipationSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    winnerPosition: {
-        type: Number,
-        default: 0
-    },
     negativeMarks: {
         type: Number,
         default: 0
@@ -61,4 +57,4 @@ const mcqParticipationSchema = new mongoose.Schema({
     timestamps: true
 })
 
-module.exports = mongoose.model('McqParticipation', mcqParticipationSchema, 'mcqParticipation');
+module.exports = mongoose.model('QuizParticipation', quizParticipationSchema, 'quizParticipation');

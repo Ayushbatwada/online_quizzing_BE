@@ -72,7 +72,7 @@ const questionSchema = new mongoose.Schema({
         enum: quizConfig.questionTypes.values,
         default: quizConfig.questionTypes.mcq
     },
-    hasMultiCorrectOptions: {
+    isMultiCorrectOptions: {
         type: Boolean,
         default: false
     },
@@ -110,4 +110,4 @@ const questionSchema = new mongoose.Schema({
     }
 });
 
-module.exports = questionSchema
+module.exports = questionSchema;
