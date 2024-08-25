@@ -1,0 +1,23 @@
+{
+  "mediaTypes": {
+    "image": "image",
+    "video": "video",
+    "audio": "audio",
+    "text": "text",
+    "values": [
+      "image", "video", "audio", "text"
+    ]
+  },
+  "quizStatus": {
+    "submitted": "submitted",
+    "active": "active",
+    "completed": "completed",
+    "cancelled": "cancelled",
+    "values": ["submitted", "active", "completed", "cancelled"]
+  },
+  "questionTypes": {
+    "mcq": "mcq",
+    "descriptive": "descriptive",
+    "values": ["mcq", "descriptive"]
+  }
+}

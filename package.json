@@ -1,0 +1,34 @@
+{
+  "name": "online_quizzing_be",
+  "version": "1.0.0",
+  "description": "The Quizzing backend service manages data storage, real-time interactions, user authentication, and scalability for quizzes. It stores quiz content, handles live quiz participation, ensures security, and provides APIs for seamless communication between the front-end and backend, ensuring a smooth user experience",
+  "main": "app.js",
+  "scripts": {
+    "dev:start": "nodemon app.js",
+    "prod:start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayushbatwada/online_quizzing_BE.git"
+  },
+  "keywords": [
+    "online_quzzing",
+    "learning"
+  ],
+  "author": "Ayush Kumar Batwara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ayushbatwada/online_quizzing_BE/issues"
+  },
+  "homepage": "https://github.com/Ayushbatwada/online_quizzing_BE#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^6.12.8",
+    "mongoose-paginate-v2": "^1.8.3",
+    "nanoid": "^3.3.7",
+    "nodemon": "^3.1.4",
+    "ua-parser-js": "^1.0.38"
+  }
+}
